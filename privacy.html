@@ -2,50 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <title>Privacy Policy - Zoe Publisher</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Privacy Policy</h1>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Zoe Publisher</div>
+    <nav aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="card compliance">
+      <div class="kicker">Privacy Policy</div>
+      <h1 style="font-size:48px">Privacy Policy</h1>
+      <p class="note">Last updated: August 29, 2026</p>
+      <p>Zoe Publisher is a private, owner-operated application. It uses Google OAuth 2.0, Gmail API read-only access, and YouTube API Services solely for the owner's private publishing workflow.</p>
 
-  <p>Last updated: August 26, 2026</p>
+      <div class="compliance-summary">
+        <div class="summary-grid">
+          <div class="summary-item"><strong>YouTube API Services</strong>Used for uploads, processing/status reads, thumbnails, and playlist membership on the owner's channel.</div>
+          <div class="summary-item"><strong>Google Privacy Policy</strong><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></div>
+          <div class="summary-item"><strong>Revocation</strong><a href="https://security.google.com/settings/security/permissions">Google Account permissions</a> can be used to revoke access.</div>
+          <div class="summary-item"><strong>Deletion</strong>After revocation or a valid deletion request, stored user-related Authorized Data is deleted as soon as practicable and within 7 calendar days, subject to legal requirements. Other stored YouTube API Data is deleted or refreshed within the periods required by YouTube Developer Policies.</div>
+        </div>
+      </div>
+    </div>
 
-  <p>
-    Zoe Publisher uses YouTube API Services.
-  </p>
+    <section class="card">
+      <h2>1. Google services and OAuth permissions</h2>
+      <p>Zoe Publisher uses Google OAuth 2.0 to authorize access only for the application owner. The current OAuth permissions used by the application are:</p>
+      <ul>
+        <li><span class="code">https://www.googleapis.com/auth/gmail.readonly</span> - read-only access to the owner's Gmail data used as an upstream source for the private publishing workflow.</li>
+        <li><span class="code">https://www.googleapis.com/auth/youtube.force-ssl</span> - authenticated YouTube account access needed by the owner-operated publishing workflow.</li>
+      </ul>
+      <p>No third-party user can connect a Google or YouTube account to Zoe Publisher.</p>
+    </section>
 
-  <p>
-    The application requests the YouTube OAuth scope
-    https://www.googleapis.com/auth/youtube.upload solely to upload
-    original videos owned and created by the application owner to the
-    owner's own YouTube channel.
-  </p>
+    <section class="card">
+      <h2>2. YouTube API Services usage</h2>
+      <p>Zoe Publisher uses YouTube API Services only for the owner's own channel. Depending on the configured workflow, it may:</p>
+      <ul>
+        <li>upload original videos and associated title, description, language, category, tags, and visibility settings;</li>
+        <li>read the uploaded video's processing and upload status so the workflow can confirm successful processing and avoid duplicate uploads;</li>
+        <li>set a custom thumbnail for an uploaded video;</li>
+        <li>check whether an uploaded video is already in an owner-controlled playlist and add it when needed.</li>
+      </ul>
+      <p>The application does not use YouTube API Data to create user profiles, sell advertising audiences, or provide third-party analytics.</p>
+    </section>
 
-  <p>
-    Zoe Publisher does not sell, rent, or share Google user data with
-    third parties.
-  </p>
+    <section class="card">
+      <h2>3. Gmail API usage</h2>
+      <p>Gmail read-only access is used by an upstream owner-operated workflow to locate and read selected source messages needed to generate the owner's publishing content. The permission is read-only: Zoe Publisher does not use this scope to send, modify, archive, label, or delete Gmail messages.</p>
+      <p>Raw email content is not published as a public API dataset and is not sold or rented. The publishing workflow uses only the information needed to construct and validate the owner's media output.</p>
+    </section>
 
-  <p>
-    OAuth credentials are used only for authenticated YouTube uploads.
-    The application does not use Google user data for advertising or
-    profiling.
-  </p>
+    <section class="card">
+      <h2>4. Data stored by the application</h2>
+      <p>OAuth client credentials and refresh credentials are kept in private secret storage and are not exposed on this website. The application may maintain limited private operational state necessary for safe publishing, such as message identifiers, content fingerprints, YouTube video/channel identifiers, processing state, upload timestamps, and playlist reconciliation state. This state is used for duplicate prevention, recovery, and auditability of the owner's automation.</p>
+    </section>
 
-  <p>
-    Users may revoke Zoe Publisher's access at any time through their
-    Google Account permissions.
-  </p>
+    <section class="card">
+      <h2>5. Sharing, sale, advertising, and cookies</h2>
+      <p>Zoe Publisher does not sell or rent Google user data or YouTube API Data. It does not provide such data to advertisers or data brokers. Google user data is processed only as necessary to operate the owner's private workflow and by infrastructure providers acting on the owner's behalf where required to run the application.</p>
+      <p>This public compliance website does not use advertising or analytics cookies.</p>
+    </section>
 
-  <p>
-    Zoe Publisher's use of information received from Google APIs adheres
-    to the Google API Services User Data Policy.
-  </p>
+    <section class="card">
+      <h2>6. Revoking access</h2>
+      <p>The owner may revoke Zoe Publisher's Google access at any time through <a href="https://security.google.com/settings/security/permissions">Google Account permissions</a>. Revocation prevents the application from obtaining new access tokens with the revoked grant.</p>
+    </section>
 
-  <p>
-    <a href="https://policies.google.com/privacy">Google Privacy Policy</a><br>
-    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a><br>
-    <a href="/">Home</a>
-  </p>
+    <section class="card">
+      <h2>7. Data deletion</h2>
+      <p>If the owner revokes Google authorization or submits a valid request to delete Google Authorized Data held by Zoe Publisher, the application owner will delete the associated stored user-related Authorized Data and credentials as soon as practicable and within 7 calendar days, except where retention is required by applicable law. Other YouTube API Data is deleted or refreshed within the retention periods required by YouTube Developer Policies, including the applicable 30-day refresh/deletion rules.</p>
+      <p>Deleting locally stored authorization data does not automatically delete videos already published to YouTube. Published YouTube content can be separately managed or deleted through YouTube or an authorized YouTube API workflow.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Google API Services User Data Policy</h2>
+      <p>Zoe Publisher's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. External policies</h2>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+        <li><a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>10. Contact</h2>
+      <p>Privacy, revocation, or deletion requests may be sent to <a href="mailto:zoeyzhong16888@gmail.com">zoeyzhong16888@gmail.com</a>.</p>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="links"><a href="/">Home</a><a href="/terms.html">Terms of Service</a></div>
+    <div>Zoe Publisher is an independent private application and is not endorsed by Google or YouTube.</div>
+  </div>
+</footer>
 </body>
 </html>
