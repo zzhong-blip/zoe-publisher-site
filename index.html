@@ -2,26 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <title>Zoe Publisher</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Zoe Publisher</h1>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Zoe Publisher</div>
+    <nav aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div class="card">
+        <div class="kicker">Private owner-operated publishing automation</div>
+        <h1>Zoe Publisher</h1>
+        <p class="lead">A private application used only by its owner to prepare and publish the owner's original video content to the owner's own channel.</p>
+        <div class="badges">
+          <span class="badge">Single owner</span>
+          <span class="badge">No third-party accounts</span>
+          <span class="badge">OAuth 2.0</span>
+          <span class="badge">Owner-controlled visibility</span>
+        </div>
+      </div>
 
-  <p>
-    Zoe Publisher is a private automation application used by its owner
-    to upload original videos to the owner's YouTube channel using the
-    YouTube Data API.
-  </p>
+      <div class="card integration">
+        <div>
+          <div class="kicker">YouTube API integration</div>
+          <h2>Publishing component</h2>
+          <p>Zoe Publisher uses YouTube API Services to upload owner-created videos, read processing/status information, set thumbnails, and manage playlist membership for the owner's channel.</p>
+        </div>
+        <a class="integration-logo" href="https://www.youtube.com/" aria-label="Open YouTube">
+          <img src="https://developers.google.com/static/youtube/images/developed-with-youtube-sentence-case-light.png" alt="Developed with YouTube">
+        </a>
+      </div>
+    </div>
 
-  <p>
-    The application is not offered as a public service and does not provide
-    access to third-party YouTube accounts.
-  </p>
+    <section class="grid">
+      <div class="card">
+        <div class="kicker">Privacy</div>
+        <h2>Transparent data handling</h2>
+        <p>The Privacy Policy explains the Google OAuth permissions used by the application, how authorized data is handled, how access can be revoked, and how deletion requests are processed.</p>
+        <p><a href="/privacy.html"><strong>Read the Privacy Policy</strong></a></p>
+      </div>
+      <div class="card">
+        <div class="kicker">Owner control</div>
+        <h2>Upload and visibility settings</h2>
+        <p>The owner explicitly controls whether a YouTube upload is performed and selects the visibility setting used by the publishing workflow: public, unlisted, or private.</p>
+        <p><a href="/terms.html"><strong>Read the Terms of Service</strong></a></p>
+      </div>
+    </section>
 
-  <p>
-    <a href="/privacy.html">Privacy Policy</a><br>
-    <a href="/terms.html">Terms of Service</a>
-  </p>
+    <section class="card">
+      <div class="kicker">Service scope</div>
+      <h2>No public SaaS or third-party upload service</h2>
+      <p>Zoe Publisher is not offered to the public, does not provide YouTube API access to third parties, and does not authorize uploads to third-party YouTube accounts. The public pages on this site exist to identify the application and publish its privacy, terms, and compliance information.</p>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+    </div>
+    <div>Zoe Publisher is an independent private application and is not endorsed by Google or YouTube.</div>
+  </div>
+</footer>
 </body>
 </html>
